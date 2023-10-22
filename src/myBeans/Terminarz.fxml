@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="343.0" prefWidth="314.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="btnPrevDay" layoutX="158.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#btnPrevDayClicked" text="Prev day" />
+      <Button fx:id="btnNextDay" layoutX="236.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#btnNextDayClicked" text="Next day" />
+      <DatePicker fx:id="dataPicker" layoutX="14.0" layoutY="32.0" prefHeight="25.0" prefWidth="127.0" />
+      <Label fx:id="labelSchedule" layoutX="13.0" layoutY="6.0" text="Schedule " />
+      <TextField fx:id="textFieldTitle" layoutX="13.0" layoutY="65.0" onKeyReleased="#titleKeyRelased" prefHeight="25.0" prefWidth="288.0" promptText="Title" />
+      <TextArea fx:id="textAreaNote" layoutX="14.0" layoutY="102.0" onKeyReleased="#noteKeyRelased" prefHeight="223.0" prefWidth="214.0" promptText="Note" wrapText="true" />
+         <Button fx:id="btnSave" layoutX="243.0" layoutY="102.0" mnemonicParsing="false" onMouseClicked="#btnSaveClicked" prefHeight="25.0" prefWidth="51.0" text="Save" />
+         <Button fx:id="btnDelete" layoutX="243.0" layoutY="137.0" mnemonicParsing="false" onMouseClicked="#btnDeleteClicked" text="Delete" />
+   </children>
+</AnchorPane>
+ </fx:root>
